@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(0, 131, 174), rgb(0, 119, 83));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bodoni Moda", serif;
+}
+
+.left {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    padding: 1%;
+}
+
+.box1 {
+    background-image: url("./images/greenry.avif");
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.box2 {
+    background-image: url("./images/waterfalls.jpeg");
+    grid-column: 2/4;
+}
+
+.box3 {
+    background-image: url("./images/beach.avif");
+}
+
+.box4 {
+    background-image: url("./images/istanbul.avif");
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+
+.box5 {
+    background-image: url("./images/Mountains.jpg");
+    grid-column: 1/3;
+}
+
+.box6 {
+    background-image: url("./images/underwater.jpeg");
+}
+
+.box7 {
+    background-image: url("./images/cat.jpeg");
+    grid-column: 2/4;
+}
+
+.right {
+    height: 100%;
+    width: 70%;
+    padding: 5%;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.box {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    border-radius: 2%;
+    background-color: rgb(112, 112, 112);
+    background-blend-mode: multiply;
+    transition: all ease-in-out 0.5s;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.box:hover {
+    cursor: pointer;
+    background-blend-mode: normal;
+    background-position: bottom;
+    background-color: transparent;
+}
